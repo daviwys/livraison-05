@@ -29,19 +29,7 @@ div:nth-child(2) {
 	flex-direction: row;
 }
 
-article:nth-child(1) {
-	font-size: 15rem;
-	border: 7px solid #555;
-	padding: 20px;
-	margin: 10px;
-	width: 220px;
-	height: 220px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-article:nth-child(2) {
+article {
 	font-size: 15rem;
 	border: 7px solid #555;
 	padding: 20px;
@@ -68,4 +56,8 @@ span {
 	padding: 7px;
 	border: 2px solid #555;
 	background-color: #ffb;
+}
+
+.vert {
+	border: 7px solid #00ff00;
 }
