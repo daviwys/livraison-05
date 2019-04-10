@@ -61,3 +61,11 @@ img {
 .red {
 	border: 7px solid #f00;
 }
+
+span {
+	font-size: 1.4rem;
+	margin-left: 20px;
+	padding: 7px;
+	border: 2px solid #555;
+	background-color: #ffb;
+}

@@ -4,16 +4,15 @@
 let maxClick = 5;
 document.getElementsByTagName('article')[0].innerHTML = 0;
 document.getElementsByTagName('article')[1].innerHTML = 0;
+document.getElementsByTagName('span')[0].innerHTML = `Winning number : ${maxClick}`;
 
-/*let player1 = document.getElementsByTagName('div')[2];
-let player2 = document.getElementsByTagName('div')[3];*/
 let player1Count = +document.getElementsByTagName('article')[0].innerHTML;
 let player2Count = +document.getElementsByTagName('article')[1].innerHTML;
 
 function setClick() {
 	maxClick = +document.getElementsByTagName('input')[0].value;
 	(maxClick >= 5) ? maxClick = maxClick : maxClick = 5;
-	document.getElementsByTagName('span')[0].innerHTML = maxClick;
+	document.getElementsByTagName('span')[0].innerHTML = `Winning number : ${maxClick}`;
 }
 
 function playerOne() {
