@@ -1,35 +1,15 @@
 html, body {
 	font-family: Verdana, Arial, serif;
 	font-size: 10px;
-	font-color: #000;
+	color: #333;
 	margin: 0 auto;
 	padding: 10px;
-}
-
-h1 {
-	font-size: 5rem;
-	text-align: center;
-	margin-bottom: 10px;
-}
-
-main {
-	/*text-align: center;*/
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-div {
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-div:nth-child(2) {
-	display: flex;
-	flex-direction: row;
+	background-color: #e5e5e5;
 }
 
 article {
+	background-color: #ffd;
+	border-radius: 15px;
 	font-size: 15rem;
 	border: 7px solid #555;
 	padding: 20px;
@@ -39,11 +19,6 @@ article {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-img {
-	width: 200px;
-	height: 200px;
 }
 
 button {
@@ -61,17 +36,60 @@ button:disabled {
 	color: #666;
 }
 
+div {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+div:nth-child(2) {
+	display: flex;
+	flex-direction: row;
+}
+
+h1 {
+	font-size: 4rem;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+}
+
+input {
+	padding: 7px;
+	background-color: #ffd;
+	border: 2px solid #555;
+	border-radius: 5px;
+}
+
+
+main {
+	/*text-align: center;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
 .red {
 	border: 7px solid #f00;
 	color: #f00;
 }
 
+.redTxt {
+	color: #f00;
+	font-weight: bold;
+}
+
 span {
 	font-size: 1.4rem;
+	color: #333;
 	margin-left: 20px;
 	padding: 7px;
 	border: 2px solid #555;
-	background-color: #ffb;
+	background-color: #ffd;
 	border-radius: 5px;
 }
 

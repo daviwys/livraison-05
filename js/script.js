@@ -4,9 +4,8 @@
 let maxClick = 5;
 document.getElementsByTagName('article')[0].innerHTML = 0;
 document.getElementsByTagName('article')[1].innerHTML = 0;
-document.getElementsByTagName('span')[0].innerHTML = `Winning number : ${maxClick}`;
+document.getElementsByTagName('span')[0].innerHTML = `Winning score : ${maxClick}`;
 
-//let winNbr = document.getElementsByTagName('input')[0].value;
 document.getElementsByTagName('input')[0].addEventListener('keyup', action => { (action.key == 'Enter') ? setClick() : null });
 
 let player1Count = +document.getElementsByTagName('article')[0].innerHTML;
@@ -14,8 +13,15 @@ let player2Count = +document.getElementsByTagName('article')[1].innerHTML;
 
 function setClick() {
 	maxClick = +document.getElementsByTagName('input')[0].value;
-	(maxClick >= 5) ? maxClick = maxClick : maxClick = 5;
-	document.getElementsByTagName('span')[0].innerHTML = `Winning number : ${maxClick}`;
+	if(player1Count >= maxClick || player2Count >= maxClick) {
+		console.log('no!');
+		document.getElementsByTagName('span')[0].innerHTML = `score already reached !`;
+		document.getElementsByTagName('span')[0].classList.add('redTxt');
+	} else {
+		(maxClick >= 5) ? maxClick = maxClick : maxClick = 5;
+		document.getElementsByTagName('span')[0].innerHTML = `Winning score : ${maxClick}`;
+		document.getElementsByTagName('span')[0].classList.remove('redTxt');
+	}
 }
 
 function playerOne() {
