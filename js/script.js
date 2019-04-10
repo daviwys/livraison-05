@@ -6,6 +6,9 @@ document.getElementsByTagName('article')[0].innerHTML = 0;
 document.getElementsByTagName('article')[1].innerHTML = 0;
 document.getElementsByTagName('span')[0].innerHTML = `Winning number : ${maxClick}`;
 
+//let winNbr = document.getElementsByTagName('input')[0].value;
+document.getElementsByTagName('input')[0].addEventListener('keyup', action => { (action.key == 'Enter') ? setClick() : null });
+
 let player1Count = +document.getElementsByTagName('article')[0].innerHTML;
 let player2Count = +document.getElementsByTagName('article')[1].innerHTML;
 
