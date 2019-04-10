@@ -23,6 +23,9 @@ function playerOne() {
 	if(player1Count == maxClick - 1) {
 		document.getElementsByTagName('article')[0].innerHTML = `<img src="img/ok.png" alt="bravo" />`;
 		document.getElementsByTagName('article')[0].classList.toggle('vert');
+		document.getElementsByTagName('article')[1].classList.toggle('red');
+		document.getElementsByTagName('button')[2].disabled = true;
+		document.getElementsByTagName('button')[4].disabled = true;
 	} else {
 		document.getElementsByTagName('article')[0].innerHTML = player1Count + 1;
 		player1Count++;
@@ -34,6 +37,9 @@ function playerTwo() {
 	if(player2Count == maxClick - 1) {
 		document.getElementsByTagName('article')[1].innerHTML = `<img src="img/ok.png" alt="bravo" />`;
 		document.getElementsByTagName('article')[1].classList.toggle('vert');
+		document.getElementsByTagName('article')[0].classList.toggle('red');
+		document.getElementsByTagName('button')[2].disabled = true;
+		document.getElementsByTagName('button')[4].disabled = true;
 	} else {
 		document.getElementsByTagName('article')[1].innerHTML = player2Count + 1;
 		player2Count++;

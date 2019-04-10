@@ -46,8 +46,24 @@ img {
 	height: 200px;
 }
 
+button {
+	cursor: pointer;
+	border: 2px solid #999;
+	border-radius: 5px;
+	padding: 9px;
+	color: #fff;
+	background-color: #555;
+}
+
+button:disabled {
+	cursor: not-allowed;
+	background-color: #999;
+	color: #666;
+}
+
 .red {
 	border: 7px solid #f00;
+	color: #f00;
 }
 
 span {
@@ -56,6 +72,7 @@ span {
 	padding: 7px;
 	border: 2px solid #555;
 	background-color: #ffb;
+	border-radius: 5px;
 }
 
 .vert {
