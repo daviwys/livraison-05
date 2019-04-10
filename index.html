@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<title>Score keeper</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="user-scalable=yes, initial-scale=1">
+	<link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+	
+</head>
+<body>
+	
+	<h1>SCORE KEEPER</h1>
+
+	<main>
+		<div>
+			<input type="text" name="clickMax" value="5" size="1" /> &nbsp; <button name="set" onclick="setClick()">SET</button> &nbsp; <button name="reset" onclick="document.location.reload(true)">RESET</button>
+			<span></span>
+		</div>
+
+		<div><article></article> &nbsp; <article></article></div>
+
+		<div>
+			<button name="player1" onclick="playerOne()">Player 1</button> &nbsp; <button name="darkmode" onclick="darkMode()">Dark mode</button> &nbsp; <button name="player2" onclick="playerTwo()">Player 2</button>
+		</div>
+	</main>
+
+	<script src="js/script.js"></script>
+
+</body>
+</html>
