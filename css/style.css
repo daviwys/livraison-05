@@ -10,17 +10,12 @@ html, body {
 @media screen and (max-width: 479px) {
 	
 	article {
-		background-color: #ffd;
-		border-radius: 15px;
-		font-size: 15rem;
+		font-size: 5rem;
 		border: 3px solid #555;
 		padding: 3px;
 		margin: 3px;
 		width: 120px;
 		height: 120px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 	
 	h1 {
