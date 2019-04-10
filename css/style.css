@@ -7,7 +7,7 @@ html, body {
 	background-color: #e5e5e5;
 }
 
-@media all and (max-width: 479px) {
+@media screen and (max-width: 479px) {
 	
 	article {
 		background-color: #ffd;
@@ -28,6 +28,7 @@ html, body {
 		text-align: center;
 		margin-bottom: 5px;
 	}
+
 }
 
 article {
