@@ -53,5 +53,13 @@ function playerTwo() {
 }
 
 function darkMode() {
+	document.getElementsByTagName('link')[0].href = 'css/dark.css';
+	document.getElementsByTagName('button')[3].setAttribute('onclick', `whiteMode()`);
+	document.getElementsByTagName('button')[3].innerHTML = 'White mode';
+}
 
+function whiteMode() {
+	document.getElementsByTagName('link')[0].href = 'css/style.css';
+	document.getElementsByTagName('button')[3].setAttribute('onclick', `darkMode()`);
+	document.getElementsByTagName('button')[3].innerHTML = 'Dark mode';
 }
