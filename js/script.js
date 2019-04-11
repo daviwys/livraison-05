@@ -14,6 +14,7 @@ let player2Count = +document.getElementsByTagName('article')[1].innerHTML;
 function refresh(style) {
 //	document.location.reload(true);
 	maxClick = 5;
+	document.getElementsByTagName('input')[0].value = 5;
 	document.getElementsByTagName('span')[0].innerHTML = `Winning score : ${maxClick}`;
 	(style == 'dark') ? darkMode() : whiteMode();
 /*
