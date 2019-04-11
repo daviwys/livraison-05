@@ -33,13 +33,19 @@ button {
 }
 
 button:disabled {
-	cursor: not-allowed;
 	background-color: #999;
 	color: #666;
 }
 
 button:hover {
 	text-shadow: 3px 3px 3px #111;
+}
+
+button[disabled]:hover {
+	cursor: not-allowed;
+	background-color: #999;
+	text-shadow: none;
+	color: #666;
 }
 
 div {
